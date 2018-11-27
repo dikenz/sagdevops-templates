@@ -22,6 +22,7 @@ set -e
 sagcc list inventory products --wait-for-cc
 
 if [ -d $SAG_HOME/profiles/SPM/bin ]; then
+    echo "DEBUG: variables in init.sh"
     $SAG_HOME/profiles/SPM/bin/startup.sh
 fi
 
