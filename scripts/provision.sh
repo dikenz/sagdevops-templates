@@ -45,6 +45,7 @@ sagcc get monitoring runtimestatus local OSGI-CCE-ENGINE -e ONLINE -c 15 --wait-
 echo "Command Central is READY"
 
 echo "Running init.sh ..."
+echo "DEBUG: variables in provision.sh"
 if ! $CC_HOME/init.sh ; then
     echo "ERROR: Initialization failed."
     exit 1
