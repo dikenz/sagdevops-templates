@@ -46,6 +46,7 @@ echo "Command Central is READY"
 
 echo "Running init.sh ..."
 echo "DEBUG: variables in provision.sh"
+var
 if ! $CC_HOME/init.sh ; then
     echo "ERROR: Initialization failed."
     exit 1
